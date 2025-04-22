@@ -8,28 +8,28 @@
     </div>
 
     <!-- Navigation links -->
-     <ul class="flex flex-col px-4 py-6 space-y-2">
+    <ul class="flex flex-col px-4 py-6 space-y-2">
         <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
             Dashboard
         </x-nav-link>
 
-        <x-nav-link :href="route('company.index')" :active="request()->routeIs('company.index')">
+        <x-nav-link :href="route('companies.index')" :active="request()->routeIs('companies.index')">
             Companies
         </x-nav-link>
 
-        <x-nav-link :href="route('application.index')" :active="request()->routeIs('application.index')">
+        <x-nav-link :href="route('job-applications.index')" :active="request()->routeIs('job-applications.index')">
             Job Applications
         </x-nav-link>
 
-        <x-nav-link :href="route('category.index')" :active="request()->routeIs('category.index')">
+        <x-nav-link :href="route('job-categories.index')" :active="request()->routeIs('job-categories.index')">
             Job Categories
         </x-nav-link>
 
-        <x-nav-link :href="route('job-vacancy.index')" :active="request()->routeIs('job-vacancy.index')">
+        <x-nav-link :href="route('job-vacancies.index')" :active="request()->routeIs('job-vacancies.index')">
             Job Vacancies
         </x-nav-link>
 
-        <x-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">
+        <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.index')">
             Users
         </x-nav-link>
 
@@ -37,9 +37,10 @@
 
         <form method="POST" action="{{ route('logout') }}">
             @csrf
-            <x-nav-link :href="route('logout')" :active="false" class="text-red-500" onclick="event.preventDefault(); this.closest('form').submit();">
+            <x-nav-link :href="route('logout')" :active="false" class="text-red-500"
+                onclick="event.preventDefault(); this.closest('form').submit();">
                 Logout
             </x-nav-link>
         </form>
-     </ul>
+    </ul>
 </nav>
