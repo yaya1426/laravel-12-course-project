@@ -16,9 +16,13 @@
     ],
     "require": {
         "php": "^8.2",
+        "aws/aws-sdk-php": "^3.343",
+        "job/shared": "*",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "job/shared": "*"
+        "league/flysystem-aws-s3-v3": "^3.29",
+        "openai-php/laravel": "^0.12.0",
+        "spatie/pdf-to-text": "^1.54"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
